@@ -6,7 +6,7 @@
 ---
 
 ## 📌 **Recursos**  
-✔ Extrai ícones de APKs 
+✔ Extrai ícones de APKs                 
 ✔ Cria um novo tema MTZ (`customicons.mtz`) se nenhum existir  
 ✔ Atualiza temas MTZ existentes se colocados na pasta principal  
 ✔ Processa APKs com **qualquer nome** (sem necessidade de renomear)  
