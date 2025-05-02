@@ -53,5 +53,23 @@ del rename.zip && \
 python "py\home.py"
 ```
 
+### **3. Após a Instalação**  
+- Quando o programa chegar na tela inicial, você encontrará todos os arquivos na pasta:  
+  **`/storage/emulated/0/rename`** (na raiz do armazenamento interno do Android)  
+
+### **4. Resultados**  
+✅ Se **não houver tema MTZ** na pasta principal:  
+   - Cria **`customicons.mtz`** (tema só de ícones)  
+
+✅ Se **já existir um tema MTZ** (ex: `meutema.mtz`):  
+   - **Adiciona os ícones extraídos** ao tema existente  
+   - Mantém todas as outras configurações originais  
+
+---
+
+## ⚠️ **Observações**  
+- **Não suporta ícones vetoriais (XML/SVG)**  
+- Alguns APKs podem não conter ícones extraíveis  
+- Para **criar um novo tema limpo**, delete qualquer `.mtz` existente antes de executar  
 
 ---
