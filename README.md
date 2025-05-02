@@ -16,7 +16,7 @@
 
 ## 📂 **Estrutura do Projeto**  
 ```
-rename/  
+/storage/emulated/0/rename/  
 ├── apk/           # ⬅ Coloque seus APKs aqui (qualquer nome)  
 ├── icons2/        # Pasta de ícones processados  
 ├── temp/          # Arquivos temporários (limpos automaticamente)  
