@@ -15,6 +15,7 @@
 ---
 
 ## 📂 **Estrutura do Projeto**  
+,,,
 rename/  
 ├── apk/           # ⬅ Coloque seus APKs aqui (qualquer nome)  
 ├── icons2/        # Pasta de ícones processados  
