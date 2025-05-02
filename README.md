@@ -76,7 +76,3 @@ python app.py
 MIT License - Consulte [LICENSE](LICENSE) para detalhes.  
 
 🔧 **Contribuições são bem-vindas!**  
-
----  
-
-✨ **Pronto para personalizar seus temas MTZ? Basta colocar os APKs na pasta `apk/` e executar!** 🚀# Rename
