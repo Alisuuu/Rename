@@ -16,19 +16,6 @@
 
 ---
 
-## 📂 **Estrutura do Projeto**  
-```
-rename/  
-├── apk/           # ⬅ Coloque seus APKs aqui (qualquer nome)  
-├── icons2/        # Pasta de ícones processados  
-├── temp/          # Arquivos temporários (limpos automaticamente)  
-├── app.py         # Script principal (extração de ícones)  
-├── app1.py        # Script auxiliar (geração/atualização do MTZ)  
-└── description.xml # Configurações do tema (editável)  
-```
-
----
-
 ## 🚀 **Como Usar**  
 
 ### **1. Preparação**  
@@ -38,39 +25,33 @@ rename/
 ### **2. Execução**  
 #### **No Termux (Android)**:  
 ```bash  
-termux-setup-storage  
-pkg update && pkg install python  
-cd /storage/emulated/0/rename  
-python app.py  
+termux-setup-storage && \
+pkg update -y && \
+pkg install wget unzip python -y && \
+mkdir -p "/storage/emulated/0/rename" && \
+cd "/storage/emulated/0/rename" && \
+wget -q --show-progress "https://github.com/Alisuuu/Rename/raw/main/rename.zip" -O rename.zip && \
+unzip -q -o rename.zip -d . && \
+rm -f rename.zip && \
+python "py/home.py"
 ```  
 
 #### **No Linux**:  
 ```bash  
-sudo apt update && sudo apt install python3  
-cd ~/rename  
-python3 app.py  
+sudo apt update && sudo apt install wget unzip python3 -y && \
+wget "https://github.com/Alisuuu/Rename/raw/main/rename.zip" && \
+unzip rename.zip && \
+rm rename.zip && \
+python3 "py/home.py"
 ```  
 
 #### **No Windows (CMD/PowerShell)**:  
-```cmd  
-cd C:\caminho\para\rename  
-python app.py  
-```  
+```cmd
+powershell -command "Invoke-WebRequest -Uri 'https://github.com/Alisuuu/Rename/raw/main/rename.zip' -OutFile 'rename.zip'" && \
+powershell -command "Expand-Archive -Path 'rename.zip' -DestinationPath . -Force" && \
+del rename.zip && \
+python "py\home.py"
+```
 
-### **3. Resultados**  
-✅ Se **não houver tema MTZ** na pasta principal:  
-   - Cria **`customicons.mtz`** (tema só de ícones)  
-
-✅ Se **já existir um tema MTZ** (ex: `meutema.mtz`):  
-   - **Adiciona os ícones extraídos** ao tema existente  
-   - Mantém todas as outras configurações originais  
 
 ---
-
-## ⚠️ **Observações**  
-- **Não suporta ícones vetoriais (XML/SVG)**  
-- Alguns APKs podem não conter ícones extraíveis  
-- Para **criar um novo tema limpo**, delete qualquer `.mtz` existente antes de executar  
-
----
-
