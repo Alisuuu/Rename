@@ -1,12 +1,14 @@
 # **Rename** - Ferramenta de Extração de Ícones de APK para Temas MTZ  
- 
+
+![GitHub](https://img.shields.io/badge/python-3.6%2B-blue)  
+![GitHub](https://img.shields.io/badge/license-MIT-green)  
 
 **Extraia ícones de APKs e crie ou atualize temas MTZ automaticamente!**  
 
 ---
 
 ## 📌 **Recursos**  
-✔ Extrai ícones de APKs                 
+✔ Extrai ícones de APKs (PNG, JPG, WebP)  
 ✔ Cria um novo tema MTZ (`customicons.mtz`) se nenhum existir  
 ✔ Atualiza temas MTZ existentes se colocados na pasta principal  
 ✔ Processa APKs com **qualquer nome** (sem necessidade de renomear)  
@@ -15,8 +17,8 @@
 ---
 
 ## 📂 **Estrutura do Projeto**  
-,,,
-rename/  
+```
+/0/rename/  
 ├── apk/           # ⬅ Coloque seus APKs aqui (qualquer nome)  
 ├── icons2/        # Pasta de ícones processados  
 ├── temp/          # Arquivos temporários (limpos automaticamente)  
@@ -76,3 +78,5 @@ python app.py
 MIT License - Consulte [LICENSE](LICENSE) para detalhes.  
 
 🔧 **Contribuições são bem-vindas!**  
+
+---  
