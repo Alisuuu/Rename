@@ -74,9 +74,3 @@ python app.py
 
 ---
 
-## 📜 **Licença**  
-MIT License - Consulte [LICENSE](LICENSE) para detalhes.  
-
-🔧 **Contribuições são bem-vindas!**  
-
----  
